@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>MENU</title>
+  <style>
+    @media (min-width: 768px) {
+  .bar {
+    height: 800px;
+  }
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  .view-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  
+ 
+}
+
+    @media (max-width: 768px) {
+
+      .img-area{
+        margin-top:40px;
+      }
+      .wrapper {
+      display: block;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+      grid-gap: 10px;
+    }
+
+    .single-box {
+      width: 100%;
+    }
+
+    .single-box img {
+      width: 100%;
+      height: auto;
+    }
+    
+/* test again avis */
+.avis{
+  position:relative;
+  min-height:100vh;
+  width:100%;
+  background:var(--eerie-black-4);
+  overflow:hidden;
+
+}
+.assembleur{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  text-align:center;
+}
+.assembleur .contain{
+  position:relative;
+  width:350px;
+  color:#fff;
+  background:#222;
+  margin:40px 10px;
+  padding:30px 20px;
+  border-radius:3px;
+  transition:0.3s ease;
+}
+.assembleur .contain .profile{
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  top:-10%;
+  width:100%;
+  display:block;
+
+}
+.assembleur .contain .profile .imgBox{
+  position:relative;
+  height:100px;
+  width:100px;
+  margin:auto;
+  border:8px solid #BB1D2B;
+  border-radius:50%;
+  overflow:hidden;
+}
+.assembleur .contain .profile .imgBox img{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  left:0;
+  top:0;
+  border-radius:50%;
+  transition:0.3s ease;
+
+}
+.assembleur .contain .profile .imgBox:hover img{
+  filter:saturate(140%);
+  transform:scale(0.98);
+}
+.assembleur .contain .profile h2{
+  padding:20px 0;
+  text-transform:capitalize;
+  color:#fff;
+  letter-spacing:1px;
+  text-align:center;
+
+}
+.assembleur .contain p{
+  margin-top:100px;
+  color:#fff;
+  padding:0 8px;
+  font-size:15px;
+  opacity:0.8
+}
+.assembleur .contain .left{
+  font-size:30px;
+  display:block;
+  text-align:left;
+  color:#BB1D2B;
+
+}
+.assembleur .contain .right{
+  font-size:30px;
+  display:block;
+  text-align:right;
+  color:#BB1D2B;
+  
+}
+
+    
+    }
+
+  </style>
+  <meta name="title" content="LA CUEVA-Bar à Tapas">
+  <meta name="description" content="This is a Restaurant html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/La Cueva Icon-02 (1).png" type="image/svg+xml">
+
+  
+<!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+<body id="top" style="height:100vh;">
+
+    <!-- 
+      - #PRELOADER
+    -->
+  
+    <div class="preload" style="display:none;" data-preaload>
+      <div class="circle"></div>
+      <p class="text">LA CUEVA</p>
+    </div>
+  
+  
+  
+  
+  
+    <!-- 
+      - #TOP BAR
+    -->
+  <section style="margin-top:5%;">
+    <div class="topbar" style="background-color:#BB1E25;">
+      <div class="container">
+  
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+  <a href="https://goo.gl/maps/u4RihT46jCxWZLKh6" target="_blank">
+          <span class="span">
+            5 Rue Tariq Bnou Ziad, Marrakech 40000
+          </span>
+      </a>
+        </address>
+  
+        <div class="separator"></div>
+  
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+  
+          <span class="span">Quotidien : 12.00 am to 2:00 am</span>
+        </div>
+  
+        <a href="tel:+212661250867" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+  
+          <span class="span">+212661250867</span>
+        </a>
+  
+        <div class="separator"></div>
+  
+        <a href="mailto:kasmaoui.khalid@gmail.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+  
+          <span class="span">kasmaoui.khalid@gmail.com</span>
+        </a>
+  
+      </div>
+    </div>
+  
+  
+  
+  
+  
+    <!-- 
+      - #HEADER
+    -->
+  
+    <header class="header active" data-header>
+      <div class="container">
+  
+        <a href="index.html" class="logo">
+          <img src="./assets/images/La Cueva Logo-website-01.png" width="200" height="80" alt="Grilli - Home">
+        </a>
+  
+        <nav class="navbar" data-navbar>
+  
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+  
+          <a href="index.html" class="logo">
+            <img src="./assets/images/La Cueva Logo-website-01.png" width="160" height="50" alt="LA CUEVA - Home">
+          </a>
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link hover-underline ">
+                <div class="separator"></div>
+  
+                <span class="span">Accueil</span>
+              </a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="menu.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+  
+                <span class="span">Menus</span>
+              </a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="about.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+  
+                <span class="span">À propos</span>
+              </a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link hover-underline">
+                <div class="separator"></div>
+  
+                <span class="span">Contact</span>
+              </a>
+            </li>
+  
+          </ul>
+  
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visitez-nous</p>
+  
+            <address class="body-4">
+              7 rue Tarik bnou zyad Gueliz Résidence Les Patios De Gueliz,<br>
+              Marrakech 40000 Maroc 
+            </address>
+  
+            <p class="body-4 navbar-text">Ouvert: 12:00 am - 2:00 am</p>
+  
+            <a href="mailto:kasmaoui.khalid@gmail.com" class="body-4 sidebar-link">kasmaoui.khalid@gmail.com</a>
+  
+            <div class="separator"></div>
+  
+            <p class="contact-label">Demande de réservation</p>
+  
+            <a href="tel:+212661250867" class="body-1 contact-number hover-underline">
+              +212661250867
+            </a>
+          </div>
+  
+        </nav>
+  
+        <!-- <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Trouver Une Table</span>
+  
+          <span class="text text-2" aria-hidden="true">Trouver Une Table</span>
+        </a> -->
+  
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+  
+        <div class="overlay" data-nav-toggler data-overlay></div>
+  
+      </div>
+    </header>
+  </section>
+    <main>
+      <article>
+  
+        <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Notre histoire</p>
+
+            <h2 class="headline-1 section-title">Chaque saveur raconte une histoire</h2>
+
+            <p class="section-text">
+              L'expérience unique de La Cueva, un restaurant-bar captivant. Plongez dans un voyage gustatif où chaque plat et cocktail raconte son propre récit, pour une expérience culinaire inoubliable à Marrakech
+            </p>
+
+            <div class="contact-label">Réservez par téléphone</div>
+
+            <a href="tel:+212661250867" class="body-1 contact-number hover-underline">+212661250867</a>
+           
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/3.png" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/DSC00437.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+                <img src="./assets/images/la cueva.png" width="133" height="134" loading="lazy" alt="">
+              </div>
+
+          </figure>
+
+          <img src="./assets/images/La Cueva Logo-02.png" width="246" height="412" loading="lazy" alt="shape"
+          class="shape shape-1 move-anim">
+
+        </div>
+      </section>
+  
+        
+  
+  
+  
+  
+  
+      </article>
+    </main>
+  
+    <!-- 
+      - #FOOTER
+    -->
+  
+    <footer class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/service-3.jpg')">
+      <div class="container">
+  
+        <div class="footer-top grid-list">
+  
+          <div class="footer-brand has-before has-after">
+  
+            <a href="#" class="logo">
+              <img src="./assets/images/La cueva-log.png" width="110" height="50" loading="lazy" alt="grilli home">
+            </a>
+  
+            <address class="body-4">
+              7 rue Tarik bnou zyad Gueliz Résidence Les Patios De Gueliz,<br>
+              Marrakech 40000 Maroc 
+            </address>
+  
+            <a href="kasmaoui.khalid@gmail.com" class="body-4 contact-link">kasmaoui.khalid@gmail.com</a>
+  
+            <a href="tel:+88123123456" class="body-4 contact-link">Demande de réservation : +212661250867</a>
+  
+            <p class="body-4">
+              Ouvert: 12:00 pm - 2:00 am
+            </p>
+     
+  
+          </div>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline" style="color:#fff;">Accueil</a>
+            </li>
+  
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline" style="color:#fff;">Menus</a>
+            </li>
+  
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline" style="color:#fff;">A propos</a>
+            </li>
+  
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline" style="color:#fff;">Contact</a>
+            </li>
+  
+          </ul>
+  
+          <ul class="footer-list">
+  
+            <li>
+              <a href="https://web.facebook.com/lacuevaMarrakech/?locale=fr_FR&_rdc=1&_rdr" class="label-2 footer-link hover-underline">Facebook</a>
+            </li>
+  
+            <li>
+              <a href="https://www.instagram.com/lacueva_marrakech/?ref=qanrw3og" class="label-2 footer-link hover-underline">Instagram</a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/H4ZQkhq7crzCR8GA6" class="label-2 footer-link hover-underline">Google Map</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+  
+        <div class="footer-bottom">
+  
+          <p class="copyright">
+            &copy; 2023 LA CUEVA. All Rights Reserved | Crafted by <a href="https://www.lecarredigital.com/"
+              target="_blank" class="link">Le Carré Digital</a>
+          </p>
+  
+        </div>
+  
+      </div>
+    </footer>
+  
+  
+  
+    <!-- 
+      - #BACK TO TOP
+    -->
+  
+    <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+  
+  
+  
+    <!-- 
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.js"></script>
+  
+    <!-- 
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
+  </body>
+  </html>
